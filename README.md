@@ -27,25 +27,39 @@ The iterative model building process utilized strict statistical validation via 
 *  **The Curbweight Exception:** While `curbweight` commanded the highest relative VIF score in the active dataset, its $p$-value remained absolute at `0.000`. Its flawless statistical significance proved it adds vital, non-redundant predictive weight.
 
 ---
+### 📈 The Predictive Formula
 
-##  Final Model Equation & Statistical Insights
-
-### The Predictive Formula
 Locking in **Model-10** as our final optimized system, the linear regression framework can be mathematically formulated as follows:
 
 $$
-\begin{aligned}
-\text{Estimated Price} = 0.1915 
-& + 0.6885 \, (\text{curbweight}) \\
-& + 0.3788 \, (\text{CarCompany\_bmw}) \\
-& + 0.2357 \, (\text{CarCompany\_audi}) \\
-& + 0.4813 \, (\text{CarCompany\_porsche}) \\
-& + 0.1993 \, (\text{CarCompany\_volvo}) \\
-& - 0.2496 \, (\text{carbody\_hardtop}) \\
-& - 0.1551 \, (\text{carbody\_hatchback}) \\
-& - 0.1840 \, (\text{carbody\_sedan}) \\
-& - 0.3733 \, (\text{carbody\_wagon})
-\end{aligned}
+\text{Estimated Price} = 0.1915
+$$
+$$
++ \; 0.6885 \times (\text{curbweight})
+$$
+$$
++ \; 0.3788 \times (\text{CarCompany\_bmw})
+$$
+$$
++ \; 0.2357 \times (\text{CarCompany\_audi})
+$$
+$$
++ \; 0.4813 \times (\text{CarCompany\_porsche})
+$$
+$$
++ \; 0.1993 \times (\text{CarCompany\_volvo})
+$$
+$$
+- \; 0.2496 \times (\text{carbody\_hardtop})
+$$
+$$
+- \; 0.1551 \times (\text{carbody\_hatchback})
+$$
+$$
+- \; 0.1840 \times (\text{carbody\_sedan})
+$$
+$$
+- \; 0.3733 \times (\text{carbody\_wagon})
 $$
 
 ### Core Findings:
